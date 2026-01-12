@@ -4,7 +4,7 @@ GitHub Pages で公開している自己紹介サイトです。
 副業・業務委託向けに、データ基盤エンジニアとしての経歴・スキル・実務内容をまとめています。
 
 ## 🔗 Site URL
-https://＜GitHubユーザー名＞.github.io/my-portfolio/
+https://tadahiro-yano.github.io/my-portfolio/
 
 ---
 
@@ -34,11 +34,11 @@ https://＜GitHubユーザー名＞.github.io/my-portfolio/
 ## 🛠 Skills
 
 ### Programming Languages
-- Python（ETL・バッチ処理）
+- Python（numpy,matplotlib,pytorch,scikit-learn）
 - SQL（分析・集計）
-- HTML / CSS / JavaScript
+- HTML / CSS / JavaScript（ホームページ，webアプリ開発）
 
 ### Cloud / Tools
-- AWS
-- OCI
-- IDMC（CD
+- AWS（S3,lambda,EC2,Route53,DynamoDB）
+- OCI（instance,object storage,ADW,ATP）
+- IDMC（CDI）

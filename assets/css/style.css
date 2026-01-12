@@ -1,6 +1,69 @@
+/* 全体 */
 body {
-  font-family: sans-serif;
-  max-width: 800px;
-  margin: 40px auto;
-  line-height: 1.7;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  background: #0f172a; /* ダークネイビー */
+  color: #e5e7eb;
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* ナビ */
+nav {
+  display: flex;
+  gap: 24px;
+  padding: 24px 40px;
+}
+
+nav a {
+  color: #cbd5f5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* メイン */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+/* ヒーロー */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+.hero p.role {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+
+.hero p.description {
+  font-size: 1.05rem;
+  max-width: 600px;
+}
+
+/* 強み */
+.highlights {
+  display: flex;
+  gap: 32px;
+  margin-top: 64px;
+}
+
+.highlight {
+  background: #020617;
+  padding: 24px;
+  border-radius: 12px;
+  flex: 1;
+}
+
+.highlight span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #38bdf8;
 }
