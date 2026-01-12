@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <title>Tadahiro Yano | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <nav>
-        <a href="index.html">About</a>
-        <a href="career.html">Career</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <main>
-        <section class="hero">
-        <h1>矢野 正大</h1>
-        <p class="role">データ基盤エンジニア / システムエンジニア</p>
-        <p class="description">
-            1日350億レコード規模のデータを扱う<br>
-            社内ビッグデータ基盤において、<br>
-            ETLパイプラインの設計・運用を担当しています。
-        </p>
-        </section>
 
-        <section class="highlights">
-        <div class="highlight">
-            <span>350億+</span>
-            <p>records / day</p>
-        </div>
-        <div class="highlight">
-            <span>22万+</span>
-            <p>ETL jobs / day</p>
-        </div>
-        <div class="highlight">
-            <span>Cloud</span>
-            <p>AWS / OCI</p>
-        </div>
-        </section>
-    </main>
-    <footer>
-        <p>
-            Built with HTML / CSS / JavaScript · Hosted on GitHub Pages
-        </p>
-        <p>© 2026 Tadahiro Yano</p>
-    </footer>
+<body>
+<div id="loader">
+  <div class="loader-text">
+    Tadahiro Yano
+  </div>
+</div>
+
+<header class="header">
+  <nav class="nav">
+    <a href="index.html">About</a>
+    <a href="career.html">Career</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+    <button id="theme-toggle" class="theme-switch" aria-label="Toggle theme">
+        <span class="icon sun">☀</span>
+        <span class="icon moon">🌙</span>
+        <span class="knob"></span>
+    </button>
+</header>
+
+
+<main>
+
+<section class="hero fade">
+  <h1>
+    Tadahiro<br>
+    Yano
+  </h1>
+  <p class="role">Data Platform Engineer / System Engineer</p>
+</section>
+
+<section class="section fade">
+  <p class="lead">
+    1日 <strong>350億レコード</strong> 規模のデータを扱う<br>
+    社内ビッグデータ基盤にて<br>
+    ETLパイプラインの設計・運用を担当。
+  </p>
+</section>
+
+<section class="metrics fade">
+  <div>
+    <span>350億</span>
+    <p>records / day</p>
+  </div>
+  <div>
+    <span>22万</span>
+    <p>ETL jobs / day</p>
+  </div>
+  <div>
+    <span>AWS / OCI</span>
+    <p>Cloud</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Tadahiro Yano</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>

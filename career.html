@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <title>Portfolio | Career</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <title>Career | Tadahiro Yano</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<header>
-  <nav>
+<header class="header">
+  <nav class="nav">
     <a href="index.html">About</a>
     <a href="career.html">Career</a>
     <a href="skills.html">Skills</a>
@@ -16,37 +16,47 @@
   </nav>
 </header>
 
-<main>
-  <h1>Career</h1>
+<main class="container">
 
-  <h2>学歴</h2>
-  <ul>
-    <li>2022年 京都大学 電気電子工学科 卒業</li>
-    <li>2024年 京都大学大学院 電気工学専攻 修士課程 修了</li>
+<section class="fade">
+  <h2>Education</h2>
+  <ul class="list">
+    <li>2022 京都大学 電気電子工学科 卒業</li>
+    <li>2024 京都大学大学院 電気工学専攻 修了</li>
   </ul>
+</section>
 
-  <h2>職務経歴</h2>
+<section class="fade">
+  <h2>Experience</h2>
   <p>
-    システムエンジニアとして、社内ビッグデータ基盤の開発・運用に従事。
+    システムエンジニアとして、<br>
+    社内ビッグデータ基盤の開発・運用に従事。
   </p>
+</section>
 
-  <h3>業務内容</h3>
-  <ul>
-    <li>IDMC（CDI）と OCI を用いたデータパイプライン構築</li>
-    <li>ETL区画の運用・監視・障害対応</li>
+<section class="fade">
+  <h2>Responsibilities</h2>
+  <ul class="list">
+    <li>IDMC（CDI）× OCI によるデータパイプライン構築</li>
+    <li>ETLジョブ運用・監視・障害対応</li>
     <li>データ品質管理・ジョブ管理</li>
   </ul>
+</section>
 
-  <h3>データ規模</h3>
-  <ul>
-    <li>データ量：約350億レコード / 日</li>
-    <li>ETLジョブ数：約22万ジョブ</li>
+<section class="fade">
+  <h2>Scale</h2>
+  <ul class="list">
+    <li>約350億レコード / 日</li>
+    <li>約22万ETLジョブ</li>
   </ul>
+</section>
+
 </main>
 
 <footer>
-  <p>© 2026 Masahiro Yano</p>
+  <p>© 2026 Tadahiro Yano</p>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>

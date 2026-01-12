@@ -1,69 +1,271 @@
-/* 全体 */
-body {
-  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  background: #0f172a; /* ダークネイビー */
-  color: #e5e7eb;
+* {
   margin: 0;
-  line-height: 1.8;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* ナビ */
-nav {
-  display: flex;
-  gap: 24px;
-  padding: 24px 40px;
+/* Light mode */
+body.light {
+  --bg: #ffffff;
+  --text: #111111;
+  --header_text:#111111;
+  --sub: #666666;
+  --accent: #0055ff;
 }
 
-nav a {
-  color: #cbd5f5;
-  text-decoration: none;
-  font-weight: 500;
+/* Dark mode */
+body.dark {
+  --bg: #0e0e0e;
+  --text: #f5f5f5;
+  --header_text:#ffffff;
+  --sub: #aaaaaa;
+  --accent: #6aa6ff;
 }
 
-nav a:hover {
-  color: #38bdf8;
-}
-
-/* メイン */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 80px 40px;
-}
-
-/* ヒーロー */
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 8px;
-}
-
-.hero p.role {
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
   font-size: 1.2rem;
-  color: #94a3b8;
-  margin-bottom: 24px;
+  margin-left: 24px;
+}
+#theme-toggle:hover {
+  transform: scale(1.15);
 }
 
-.hero p.description {
-  font-size: 1.05rem;
-  max-width: 600px;
+body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: "Inter", "Noto Sans JP", system-ui, -apple-system, sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
 }
 
-/* 強み */
-.highlights {
+
+a {
+  color: var(--header_text);
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(230, 57, 70);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+  justify-content: center;
+}
+
+.nav {
   display: flex;
   gap: 32px;
-  margin-top: 64px;
-}
-
-.highlight {
-  background: #020617;
   padding: 24px;
-  border-radius: 12px;
-  flex: 1;
+  justify-content: center;
 }
 
-.highlight span {
+.hero {
+  min-height: 100vh;
+  padding: 160px 24px;
+  justify-content: center;
+  padding-left: 200px;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+
+.role {
+  color: var(--sub);
+}
+
+/* ===============================
+   Section
+================================ */
+section {
+  margin-bottom: 72px;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 1000px;
+  padding-right: 32px;
+  padding-bottom: 160px;
+  padding-left: 80px;
+}
+
+.lead {
+  padding-left: 200px;
+  font-size: 1.4rem;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 40px;
+  padding: 160px 24px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.metrics span {
   font-size: 2rem;
-  font-weight: bold;
-  color: #38bdf8;
+  font-weight: 600;
+}
+
+.list {
+  margin-top: 24px;
+}
+
+.list li {
+  margin-bottom: 12px;
+}
+
+footer {
+  padding: 80px 24px;
+  text-align: center;
+  color: #999;
+}
+
+/* animation */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Loading ===== */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader-text {
+  color: #fff;
+  font-size: clamp(2rem, 6vw, 4rem);
+  letter-spacing: 0.05em;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+#loader.hide {
+  animation: fadeOut 1s ease forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+/* ===============================
+   Layout
+================================ */
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 80px 24px 120px;
+}
+
+
+/* =========================
+  Theme Switch
+========================= */
+
+.theme-switch {
+  position: relative;
+  width: 64px;
+  height: 32px;
+  border-radius: 999px;
+  background: #e5e5e5;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  transition: background 0.3s ease;
+}
+
+/* アイコン */
+.theme-switch .icon {
+  font-size: 14px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* ノブ（丸） */
+.theme-switch .knob {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =========================
+  Dark Mode
+========================= */
+
+body.dark .theme-switch {
+  background: #222;
+}
+
+body.dark .theme-switch .knob {
+  transform: translateX(32px);
+}
+
+body.dark .sun {
+  opacity: 0.3;
+}
+
+body.dark .moon {
+  opacity: 1;
+}
+
+/* =========================
+  Light Mode
+========================= */
+
+body.light .theme-switch {
+  background: #ddd;
+}
+
+body.light .sun {
+  opacity: 1;
+}
+
+body.light .moon {
+  opacity: 0.3;
 }
