@@ -49,6 +49,7 @@ a {
 
 
 .header {
+  padding:0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -60,16 +61,18 @@ a {
 
 .nav {
   display: flex;
-  gap: 32px;
-  padding: 24px;
+  gap: 16px;
+  padding: 16px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
   justify-content: center;
 }
 
 .hero {
-  min-height: 100vh;
-  padding: 160px 24px;
-  justify-content: center;
-  padding-left: 200px;
+  min-height: 100dvh;
+  padding: 120px 24px 80px;
+  padding-left: 24px;
+  text-align: left;
 }
 
 .hero h1 {
@@ -87,39 +90,34 @@ a {
    Section
 ================================ */
 section {
-  margin-bottom: 72px;
+  margin-bottom: 48px;
 }
 
 section:last-child {
   margin-bottom: 0;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding-top: 1000px;
-  padding-right: 32px;
-  padding-bottom: 160px;
-  padding-left: 80px;
-}
-
 .lead {
-  padding-left: 200px;
-  font-size: 1.4rem;
+  padding-left: 0;
+  font-size: 1.1rem;
 }
 
 .metrics {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 40px;
-  padding: 160px 24px;
+  gap: 24px;
+  padding: 80px 24px;
   max-width: 900px;
   margin: auto;
 }
 
 .metrics span {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
+}
+
+main {
+  padding-top: 80px;
 }
 
 .list {
@@ -183,6 +181,40 @@ footer {
     visibility: hidden;
   }
 }
+@media (min-width: 768px) {
+  .nav {
+    gap: 24px;
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding-left: 80px;
+  }
+
+  .lead {
+    padding-left: 80px;
+    font-size: 1.25rem;
+  }
+}
+
+/* ===============================
+   PC (>= 1024px)
+================================ */
+@media (min-width: 1024px) {
+  .hero {
+    padding-left: 200px;
+  }
+
+  .lead {
+    padding-left: 200px;
+    font-size: 1.4rem;
+  }
+
+  .metrics {
+    padding: 160px 24px;
+  }
+}
+
 
 
 /* ===============================
