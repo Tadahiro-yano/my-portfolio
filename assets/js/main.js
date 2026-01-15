@@ -10,6 +10,21 @@ window.addEventListener("load", () => {
   }, 1800);
 });
 
+window.addEventListener("load", () => {
+  const bar = document.getElementById("loader-line-bar");
+  const loader = document.getElementById("loader");
+
+  // 次のフレームで開始（transitionを効かせるため）
+  requestAnimationFrame(() => {
+    bar.style.width = "100%";
+  });
+
+  // バーが伸びきるのと同時にfadeout
+  setTimeout(() => {
+    loader.classList.add("hide");
+  }, 1000);
+});
+
 /* ===============================
    Theme Toggle
 ================================ */
