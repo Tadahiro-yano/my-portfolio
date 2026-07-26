@@ -1,77 +1,72 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tadahiro Yano | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="大規模データ基盤の実務と、Web・iOS・APIのプロダクト開発に取り組むエンジニア、矢野忠寛のポートフォリオ。">
+  <title>Tadahiro Yano | Data &amp; Product Engineer</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-<body>
-<div id="loader">
-  <div class="loader-inner">
-  <div class="loader-text">
-    Tadahiro Yano
-  </div>
-  <div class="loader-line">
-    <span class="loader-line-bar" id="loader-line-bar"></span>
-  </div>
-  </div>
+<body id="top">
+<div id="loader" aria-hidden="true">
+  <div class="loader-inner"><div class="loader-text">Tadahiro Yano</div><div class="loader-line"><span class="loader-line-bar" id="loader-line-bar"></span></div></div>
 </div>
 
 <header class="header">
-  <nav class="nav">
-    <a href="index.html">About</a>
-    <a href="career.html">Career</a>
-    <a href="skills.html">Skills</a>
-    <a href="contact.html">Contact</a>
+  <a class="brand" href="index.html" aria-label="Tadahiro Yano ホーム">TY<span>.</span></a>
+  <nav class="nav" aria-label="メインナビゲーション">
+    <a class="active" href="index.html">About</a><a href="career.html">Career</a><a href="skills.html">Skills</a><a href="contact.html">Contact</a>
   </nav>
-    <button id="theme-toggle" class="theme-switch" aria-label="Toggle theme">
-        <span class="icon sun">☀</span>
-        <span class="icon moon">🌙</span>
-        <span class="knob"></span>
-    </button>
+  <button id="theme-toggle" class="theme-switch" aria-label="カラーテーマを切り替える" aria-pressed="false"><span class="icon sun">☀</span><span class="icon moon">☾</span><span class="knob"></span></button>
 </header>
 
-
 <main>
+  <section class="hero fade">
+    <div class="eyebrow"><span class="status-dot"></span>Open to side projects &amp; new opportunities</div>
+    <h1>データとプロダクトで、<br><em>複雑さを価値に変える。</em></h1>
+    <p class="hero-copy">大規模データ基盤の安定運用から、Web・iOS・APIを横断するプロダクト開発まで。要件を整理し、設計し、動く形にして届けるエンジニアです。</p>
+    <div class="actions"><a class="button primary" href="contact.html">相談してみる <span>↗</span></a><a class="button secondary" href="#projects">Projectsを見る <span>↓</span></a></div>
+  </section>
 
-<section class="hero fade">
-  <h1>
-    Tadahiro<br>
-    Yano
-  </h1>
-  <p class="role">Data Platform Engineer / System Engineer</p>
-</section>
+  <section class="metrics fade" aria-label="実務規模">
+    <div><span>350億<small>件 / 日</small></span><p>データ処理規模</p></div>
+    <div><span>22万<small>jobs / 日</small></span><p>ETL運用規模</p></div>
+    <div><span>Web / iOS / API</span><p>横断した個人開発</p></div>
+  </section>
 
-<section class="section fade">
-  <p class="lead">
-    1日 <strong>350億レコード</strong> 規模のデータを扱う<br>
-    社内ビッグデータ基盤にて<br>
-    ETLパイプラインの設計・運用を担当。
-  </p>
-</section>
+  <section class="section-wrap fade">
+    <div class="section-heading"><p class="section-number">01 / VALUE</p><h2>運用の現実を知り、<br>プロダクト全体を考える。</h2></div>
+    <div class="value-grid">
+      <article class="value-card"><span class="card-index">01</span><h3>Data Platform</h3><p>大規模ETL基盤で、パイプライン構築、監視、障害対応、データ品質・コスト管理を担当。止めないための設計と運用を重視します。</p></article>
+      <article class="value-card"><span class="card-index">02</span><h3>Full-stack</h3><p>React / TypeScriptからNode.js / Express、PostgreSQLまで一貫して実装。認証・権限・API・DBのつながりを捉えて開発します。</p></article>
+      <article class="value-card"><span class="card-index">03</span><h3>Product Delivery</h3><p>要件定義、UI、クラウド展開、iOS対応、運用ドキュメントまでカバー。アイデアを「使える状態」に近づけることが得意です。</p></article>
+    </div>
+  </section>
 
-<section class="metrics fade">
-  <div>
-    <span>350億</span>
-    <p>records / day</p>
-  </div>
-  <div>
-    <span>22万</span>
-    <p>ETL jobs / day</p>
-  </div>
-  <div>
-    <span>AWS / OCI</span>
-    <p>Cloud</p>
-  </div>
-</section>
+  <section class="section-wrap projects fade" id="projects">
+    <div class="section-heading"><p class="section-number">02 / SELECTED PROJECTS</p><h2>課題から設計した、<br>2つのプロダクト。</h2></div>
+    <div class="project-list">
+      <article class="project-card project-travel">
+        <div class="project-top"><span class="project-label">01 / Web &amp; iOS</span><span class="project-year">2026</span></div>
+        <div><h3>Tabinowa</h3><p class="project-lead">旅行前の計画から旅行後の精算まで、散らばる情報をひとつに。</p></div>
+        <p>React Web、Expo / React Native iOS、Express APIを同一リポジトリで開発。共同編集、Owner / Editor権限、予約・予定・支出管理、AI提案、StoreKit課金までプロダクト全体を設計しています。</p>
+        <ul class="tags"><li>React</li><li>TypeScript</li><li>Expo</li><li>Express</li><li>Supabase</li><li>StoreKit</li></ul>
+        <a class="text-link" href="https://travel-app-68rj.onrender.com" target="_blank" rel="noopener noreferrer">Live app <span>↗</span></a>
+      </article>
+      <article class="project-card project-muscle">
+        <div class="project-top"><span class="project-label">02 / Full-stack &amp; AI</span><span class="project-year">2026</span></div>
+        <div><h3>Muscle Analytics</h3><p class="project-lead">トレーニング・食事・バイタルを、次の行動につながるデータへ。</p></div>
+        <p>記録、可視化、AI分析を一元化したフルスタックアプリ。JWT認証、正規化したPostgreSQL、OpenAI APIのフォールバック、ヘルスチェックを備え、本番運用を想定して構築しています。</p>
+        <ul class="tags"><li>React</li><li>Node.js</li><li>PostgreSQL</li><li>OpenAI API</li><li>Vercel</li><li>Render</li></ul>
+        <a class="text-link" href="https://muscle-app-vaaq.onrender.com" target="_blank" rel="noopener noreferrer">Live app <span>↗</span></a>
+      </article>
+    </div>
+  </section>
 
+  <section class="cta fade"><p class="section-number">LET'S WORK TOGETHER</p><h2>データ基盤、Web開発、<br>プロダクトのご相談を。</h2><p>副業での開発支援、新しい環境での挑戦、どちらも歓迎しています。</p><a class="button primary" href="contact.html">Contact <span>↗</span></a></section>
 </main>
 
-<footer>
-  <p>© 2026 Tadahiro Yano</p>
-</footer>
-
+<footer><a class="brand" href="index.html">TY<span>.</span></a><p>© 2026 Tadahiro Yano</p><a href="#top" class="back-top">Back to top ↑</a></footer>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

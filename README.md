@@ -1,7 +1,7 @@
 # My Portfolio
 
 GitHub Pages で公開している自己紹介サイトです。  
-副業・業務委託向けに、データ基盤エンジニアとしての経歴・スキル・実務内容をまとめています。
+副業・転職向けに、大規模データ基盤の実務経験と、Web・iOS・APIを横断したプロダクト開発実績をまとめています。
 
 ## 🔗 Site URL
 https://tadahiro-yano.github.io/my-portfolio/
@@ -10,7 +10,7 @@ https://tadahiro-yano.github.io/my-portfolio/
 
 ## 👤 Profile
 - 職種：システムエンジニア / データ基盤エンジニア
-- 専門領域：データ基盤、ETL、ビッグデータ運用
+- 専門領域：データ基盤、ETL、フルスタックWeb開発、iOSアプリ開発
 - 現在：社内ビッグデータ基盤の開発・運用に従事
 
 ---
@@ -34,11 +34,21 @@ https://tadahiro-yano.github.io/my-portfolio/
 ## 🛠 Skills
 
 ### Programming Languages
-- Python（numpy,matplotlib,pytorch,scikit-learn）
+- Python（NumPy、Matplotlib、PyTorch、scikit-learn）
 - SQL（分析・集計）
-- HTML / CSS / JavaScript（ホームページ，webアプリ開発）
+- React / TypeScript / HTML / CSS / JavaScript
+- Node.js / Express
+- React Native / Expo / Capacitor
+- PostgreSQL / Supabase
 
 ### Cloud / Tools
 - AWS（S3,lambda,EC2,Route53,DynamoDB）
 - OCI（instance,object storage,ADW,ATP）
 - IDMC（CDI）
+
+---
+
+## Products
+
+- **Tabinowa**：旅行計画・共同編集・予約・支出・精算をまとめるWeb / iOSアプリ
+- **Muscle Analytics**：トレーニング・食事・バイタルの記録、可視化、AI分析を行うフルスタックアプリ
