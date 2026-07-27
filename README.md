@@ -1,7 +1,7 @@
 # My Portfolio
 
 GitHub Pages で公開している自己紹介サイトです。  
-副業・転職向けに、大規模データ基盤の実務経験と、Web・iOS・APIを横断したプロダクト開発実績をまとめています。
+副業・転職向けに、大規模データ基盤の設計・運用経験、AI-readyなデータ整備への志向、Web・iOS・APIを横断した個人開発実績をまとめています。
 
 ## 🔗 Site URL
 https://tadahiro-yano.github.io/my-portfolio/
@@ -10,8 +10,9 @@ https://tadahiro-yano.github.io/my-portfolio/
 
 ## 👤 Profile
 - 職種：システムエンジニア / データ基盤エンジニア
-- 専門領域：データ基盤、ETL、フルスタックWeb開発、iOSアプリ開発
-- 現在：社内ビッグデータ基盤の開発・運用に従事
+- 専門領域：データ基盤、ETL、監視・運用、フルスタックWeb開発、iOSアプリ開発
+- 現在：社内ビッグデータ基盤の開発・運用と、7人規模の運用・保守チームのリードに従事
+- 志向：データマネジメント、データエンジニアリング、データスチュワード領域からAI-readyなデータ整備を推進
 
 ---
 
@@ -24,6 +25,9 @@ https://tadahiro-yano.github.io/my-portfolio/
 - IDMC（CDI）と OCI を用いたデータパイプライン構築
 - ETL区画の運用・監視・障害対応
 - データ品質管理、ジョブ管理
+- Datadogを用いた監視・アラート設計
+- 7人規模の運用・保守チームのリード
+- Informatica World 2026にて、大規模ETL基盤のアーキテクチャと性能改善を英語で発表
 
 ### データ規模
 - データ量：約 **350億レコード / 日**
@@ -50,5 +54,5 @@ https://tadahiro-yano.github.io/my-portfolio/
 
 ## Products
 
-- **Tabinowa**：旅行計画・共同編集・予約・支出・精算をまとめるWeb / iOSアプリ
-- **Muscle Analytics**：トレーニング・食事・バイタルの記録、可視化、AI分析を行うフルスタックアプリ
+- **[Tabinowa](https://apps.apple.com/jp/app/tabinowa/id6792025801)**：Codexを活用して個人開発した旅行計画・共同編集・予約・支出・精算のWeb / iOSアプリ（[要件・設計資料](https://github.com/Tadahiro-yano/travel_app)）
+- **[FitTrack Pro](https://muscle-app-ivory.vercel.app/)**：Codexを活用して個人開発したトレーニング・食事・バイタルの記録、可視化、AI分析を行うフルスタックアプリ（[要件・設計資料](https://github.com/Tadahiro-yano/muscle-app)）
